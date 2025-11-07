@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <h1>WebSocket Chat</h1>
+  <p>
+    Username: <input id="username" value="user_<?=(Math.random()*1000|0)?>" />
+    Room: <input id="room" value="lobby" />
+    <button id="connect">Connect</button>
+    <button id="disconnect" disabled>Disconnect</button>
+  </p>
+  <div id="log"></div>
+  <form id="sendForm">
+    <input id="text" type="text" placeholder="Type message…" />
+    <button type="submit">Send</button>
+  </form>
+  <!-- Load JavaScript after elements are ready -->
+    <script>
+        // Generate random username dynamically
+        document.getElementById("username").value = "user_" + Math.floor(Math.random() * 1000);
+    </script>
+    <script src="main.js" defer></script>
+</body>
+</html>

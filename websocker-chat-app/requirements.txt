@@ -1,0 +1,23 @@
+# FastAPI backend
+fastapi==0.115.2
+uvicorn[standard]==0.30.6
+
+# Data validation
+pydantic==2.9.2
+pydantic-settings==2.5.2
+
+# Environment variables
+python-dotenv==1.0.1
+
+# WebSockets support
+websockets==12.0
+
+# HTTP client for tests (optional)
+httpx==0.27.2
+
+# Test dependencies
+pytest==8.3.2
+pytest-asyncio==0.23.7
+
+# CORS middleware + external access
+starlette==0.38.5
